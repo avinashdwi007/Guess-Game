@@ -1,0 +1,223 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'gilroy';
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #c8fef7;
+}
+.page1{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 99;
+}
+
+input{
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 300px;
+    font-size: 2vw;
+    padding: 1vw;
+    border-right: 1px solid black;
+}
+.search{
+    height: 50px;
+    flex-direction: row;
+    width: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1vw;
+}
+.search #btn1{
+      padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+    font-size: 1.5vw;
+
+}
+#btn2{
+    padding: 10px 15px;
+    border: none;
+    background-color: #005848;
+    border-radius: 10px;
+    color: white;
+    margin-top: 25px;
+    font-size: 1.5vw;
+}
+
+p{
+    height: 20px;
+    width: 50%;
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+#para2{
+    font-weight: 900;
+}
+button:active{
+    color: rgb(85, 85, 85);
+    background-color: rgb(75, 227, 75);
+}
+
+#randomNum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    width: 130px;
+    font-size:5vw;
+    border-radius: 50%;
+    text-align:center;
+    border: 3px solid black;
+    filter: blur(10px);
+
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shape{
+    height: 650px;
+    width : 650px;
+    filter: blur(20px);
+    border-radius: 50%;
+    /* background:linear-gradient(319deg, #ffcb43 10%, #ff6425 37% ); */
+    background-color: rgb(2, 196, 83);
+   
+    z-index: 8;
+    position: absolute;
+    animation: anime 4s infinite alternate;
+}
+
+@keyframes anime {
+    from{
+        transform: translate(-2%, -3%) skew(5deg)
+    }
+    to{
+        transform: translate(2%, 3%) skew(15deg)
+    }
+}
+
+.pics{
+    height: 100%;
+    width: 100%;
+    z-index: 7;
+    position: absolute;  
+}
+
+.pics img{
+    height: 100px;
+    transition: scale ease-in 0.2s;
+}
+.pics img:hover{
+    scale: (1.2);
+    
+}
+
+.one{
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    transform: rotate(10deg);
+    animation: one 3s infinite alternate;
+}
+.two{
+    position: absolute;
+    top:82%;
+    left: 24%;
+    transform: rotate(10deg);
+    animation: one 1.5s infinite alternate;
+}
+.three{
+    position: absolute;
+    top:15%;
+    left: 85%;
+    transform: rotate(10deg);
+    animation: one 1s infinite alternate;
+}
+.four{
+    position: absolute;
+    top:45%;
+    left: 18%;
+    transform: rotate(10deg);
+    animation: one 3s infinite alternate;
+}
+.five{
+    position: absolute;
+    top:74%;
+    left: 92%;
+    transform: rotate(10deg);
+    animation: one 2.3s infinite alternate;
+}
+.six{
+    position: absolute;
+    top:54%;
+    left: 75%;
+    transform: rotate(10deg);
+    animation: one 2.5s infinite alternate;
+}
+.seven{
+    position: absolute;
+    top:4%;
+    left: 25%;
+    transform: rotate(10deg);
+    animation: one 1.4s infinite alternate;
+}
+.eight{
+    position: absolute;
+    top:64%;
+    left: 1%;
+    transform: rotate(10deg);
+    animation: one 1.2s infinite alternate;
+}
+.nine{
+    position: absolute;
+    top:8%;
+    left: 67%;
+    transform: rotate(10deg);
+    animation: one 1.5s infinite alternate;
+}
+.zero{
+    position: absolute;
+    top:85%;
+    left: 67%;
+    transform: rotate(10deg);
+    animation: one 1.7s infinite alternate;
+}
+
+@keyframes one {
+    from{
+        transform: translate(-5%,-10%) skew(0deg)  rotate(-5deg) scale(1.2);
+        /* opacity: 0; */
+    }
+    to{
+        /* opacity: 1;  */
+        transform: translate(5%,10%)  rotate(10deg) skew(5deg);
+
+    }
+    
+}
